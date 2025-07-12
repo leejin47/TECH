@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>디지털 사회와 인공지능</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>디지털 사회와 인공지능 인포그래픽</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#F0F4F8]">
+
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-[#1A202C] mb-2">디지털 사회와 인공지능</h1>
+            <p class="text-lg text-[#4A5568]">미래 사회를 이해하고 준비하는 우리의 이야기</p>
+        </header>
+
+        <main class="space-y-8">
+
+            <section id="session1" class="bg-white rounded-xl shadow-lg p-6 md:p-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h2 class="text-2xl font-bold text-[#4F46E5] mb-4">1차시: 우리는 디지털 세상에 살고 있어요! 🏙️</h2>
+                        <p class="text-[#4A5568] mb-6">
+                            디지털 사회는 마치 우리가 사는 '디지털 도시'와 같아요. 컴퓨터, 인터넷, 스마트폰 같은 디지털 기술로 만들어진 이 도시에서 우리는 정보를 주고받고, 소통하며 살아가고 있습니다. 이 디지털 도시는 우리에게 많은 편리함을 주지만, 동시에 조심해야 할 점들도 있답니다.
+                        </p>
+                        <div class="bg-[#E0E7FF] rounded-lg p-6">
+                            <h3 class="font-bold text-lg text-center text-[#3730A3] mb-4">디지털 사회의 특징</h3>
+                            <div class="flex flex-col md:flex-row items-center justify-around space-y-4 md:space-y-0 text-center">
+                                <div class="flex flex-col items-center">
+                                    <div class="text-4xl mb-2">⚡</div>
+                                    <span class="font-bold text-[#4338CA]">빠른 정보 이동</span>
+                                </div>
+                                <div class="text-2xl text-[#6366F1] font-bold">↔️</div>
+                                <div class="flex flex-col items-center">
+                                    <div class="text-4xl mb-2">🌐</div>
+                                    <span class="font-bold text-[#4338CA]">초연결 사회</span>
+                                </div>
+                                <div class="text-2xl text-[#6366F1] font-bold">↔️</div>
+                                <div class="flex flex-col items-center">
+                                    <div class="text-4xl mb-2">💡</div>
+                                    <span class="font-bold text-[#4338CA]">새로운 기회 창출</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center p-8 bg-gradient-to-br from-[#A5B4FC] to-[#6366F1] rounded-xl text-white">
+                        <p class="text-2xl font-bold mb-2">우리의 삶을 바꾸는</p>
+                        <p class="text-8xl font-extrabold mb-4">디지털</p>
+                        <p class="text-2xl font-bold">기술의 힘</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="session2" class="bg-white rounded-xl shadow-lg p-6 md:p-8">
+                <h2 class="text-2xl font-bold text-center text-[#EC4899] mb-6">2차시: 똑똑한 친구, 인공지능! 🧑‍🔬</h2>
+                <p class="text-center text-[#4A5568] mb-8 max-w-3xl mx-auto">
+                    인공지능은 마치 '똑똑한 꼬마 과학자' 같아요. 수많은 '데이터'라는 책을 읽으면서 스스로 배우고, 문제를 해결하고, 심지어 새로운 것을 만들어내기도 합니다. 우리 주변에는 이미 다양한 인공지능 친구들이 우리를 돕고 있답니다.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="font-bold text-lg text-center text-[#831843] mb-4">우리 주변의 인공지능</h3>
+                        <p class="text-sm text-center text-gray-500 mb-4">어떤 인공지능 친구들이 우리와 함께할까요?</p>
+                        <div class="chart-container">
+                            <canvas id="aiExamplesChart"></canvas>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-center text-[#831843] mb-4">인공지능의 학습 원리</h3>
+                        <p class="text-sm text-center text-gray-500 mb-4">똑똑한 인공지능은 어떻게 배우는 걸까요?</p>
+                        <div class="chart-container">
+                            <canvas id="aiLearningChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="session3" class="bg-white rounded-xl shadow-lg p-6 md:p-8">
+                <h2 class="text-2xl font-bold text-center text-[#10B981] mb-6">3차시: 인공지능과 함께하는 미래 🚀</h2>
+                <p class="text-center text-[#4A5568] mb-8 max-w-3xl mx-auto">
+                    인공지능은 '미래를 만드는 슈퍼 파워'와 같아요. 이 기술의 발전은 우리 사회와 직업, 생활 방식에 큰 변화를 가져올 것입니다. 우리는 이 슈퍼 파워를 올바르게 활용하고, 인공지능 시대에 필요한 역량을 키워 멋진 미래를 만들어가야 합니다.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="font-bold text-lg text-center text-[#047857] mb-4">인공지능 시대에 필요한 역량</h3>
+                        <p class="text-sm text-center text-gray-500 mb-4">미래를 준비하는 우리에게 필요한 능력은?</p>
+                        <div class="chart-container">
+                            <canvas id="futureSkillsChart"></canvas>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-center text-[#047857] mb-4">미래 사회의 변화</h3>
+                        <p class="text-sm text-center text-gray-500 mb-4">인공지능이 가져올 주요 변화는 무엇일까요?</p>
+                        <div class="relative p-4">
+                            <div class="flex flex-col space-y-4">
+                                <div class="flex items-center space-x-4 p-4 bg-emerald-50 rounded-lg border-l-4 border-emerald-500">
+                                    <div class="text-2xl font-bold text-emerald-600">1</div>
+                                    <div>
+                                        <h4 class="font-bold text-emerald-800">새로운 직업군 등장</h4>
+                                        <p class="text-sm text-emerald-700">인공지능과 협력하는 직업이 늘어납니다.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-4 p-4 bg-emerald-50 rounded-lg border-l-4 border-emerald-500">
+                                    <div class="text-2xl font-bold text-emerald-600">2</div>
+                                    <div>
+                                        <h4 class="font-bold text-emerald-800">생활의 편리성 증대</h4>
+                                        <p class="text-sm text-emerald-700">개인 맞춤형 서비스가 보편화됩니다.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-4 p-4 bg-emerald-50 rounded-lg border-l-4 border-emerald-500">
+                                    <div class="text-2xl font-bold text-emerald-600">3</div>
+                                    <div>
+                                        <h4 class="font-bold text-emerald-800">윤리적 고려의 중요성</h4>
+                                        <p class="text-sm text-emerald-700">인공지능의 책임과 공정성이 강조됩니다.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-4 p-4 bg-emerald-50 rounded-lg border-l-4 border-emerald-500">
+                                    <div class="text-2xl font-bold text-emerald-600">4</div>
+                                    <div>
+                                        <h4 class="font-bold text-emerald-800">창의적 문제 해결 능력 요구</h4>
+                                        <p class="text-sm text-emerald-700">인간 고유의 능력이 더욱 중요해집니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="text-center mt-12 py-6 border-t border-gray-300">
+            <p class="text-[#4A5568]">미래 사회의 주인공이 될 여러분의 멋진 도전을 응원합니다!</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
